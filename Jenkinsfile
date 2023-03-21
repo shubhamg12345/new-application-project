@@ -8,11 +8,11 @@ pipeline {
 	stages {
 		stage ('install-apache'){
 					steps{	
-							sh 'sudo service httpd stop'
-							sh 'sudo yum remove httpd -y'	
-							sh 'sudo sleep 5'
-							sh 'sudo yum install httpd -y'
-							sh 'sudo service httpd start'
+							sh 'service httpd stop'
+							sh 'yum remove httpd -y'	
+							sh 'sleep 5'
+							sh 'yum install httpd -y'
+							sh 'service httpd start'
 					}			
 		}
 		stage ('copy-html'){
