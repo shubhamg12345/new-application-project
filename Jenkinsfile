@@ -17,7 +17,7 @@ pipeline {
 		}
 		stage ('copy-html'){
 					steps {
-					dir ('/mnt/new-application'){
+					dir ('/mnt/new-application-project'){
 							sh 'cp -r index.html /var/www/html'
 							sh 'cp -r qa.html /var/www/html'
 							sh 'cp -r dev.html /var/www/html'
