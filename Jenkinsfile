@@ -19,7 +19,7 @@ pipeline {
 							sh 'cp -r index.html /var/www/html'
 							sh 'cp -r qa.html /var/www/html'
 							sh 'cp -r dev.html /var/www/html'
-							sh 'sudo chmod -R /var'		
+							sh 'sudo chmod -R 777 /var'		
 					}		
 		}
 	}
