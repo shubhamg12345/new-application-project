@@ -8,8 +8,7 @@ pipeline {
 	stages {
 		stage ('install-apache'){
 					steps{	
-							sh 'service httpd stop'
-							sh 'yum remove httpd -y'	
+							sh 'yum remove httpd* -y'	
 							sh 'sleep 5'
 							sh 'yum install httpd -y'
 							sh 'service httpd start'
